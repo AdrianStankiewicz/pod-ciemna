@@ -578,7 +578,7 @@ footer a:hover { color: #fff; }
 .footer-bottom {
   margin-top: 30px; padding-top: 20px;
   border-top: 1px solid #3d3424;
-  font-size: .8rem; opacity: .6;
+  font-size: .8rem; color: #9c9080;
 }
 
 /* ========== Floating contact (FAB) ========== */
@@ -628,10 +628,10 @@ footer a:hover { color: #fff; }
 .fab-main:hover { background: #4a6f4a; }
 .fab.open .fab-main { transform: rotate(45deg); background: #5d5540; }
 @keyframes fabPulse {
-  0%, 100% { box-shadow: 0 4px 20px rgba(61,90,61,.35); }
-  50% { box-shadow: 0 4px 32px rgba(61,90,61,.55); }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
 }
-.fab-main { animation: fabPulse 3s ease-in-out infinite; }
+.fab-main { animation: fabPulse 2.5s ease-in-out infinite; }
 .fab.open .fab-main { animation: none; }
 
 /* ========== Back to top ========== */
