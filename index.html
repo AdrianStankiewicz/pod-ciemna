@@ -482,6 +482,21 @@
   </div>
 </section>
 
+<!-- ========== CTA ========== -->
+<section class="cta-banner">
+  <h2>Zaplanuj swój wypoczynek</h2>
+  <p class="cta-sub">Rezerwujemy telefonicznie i mailowo — bez pośredników, bez prowizji. Zadzwoń lub napisz, doradzimy najlepszy termin.</p>
+  <div class="cta-buttons">
+    <a href="tel:+48509594131" class="cta-btn cta-btn-primary">
+      <span class="cta-btn-icon">&#9742;</span> Zadzwoń teraz
+    </a>
+    <a href="mailto:kwaterypodciemna@gmail.com" class="cta-btn">
+      <span class="cta-btn-icon">&#9993;</span> Napisz e-mail
+    </a>
+  </div>
+  <a href="tel:+48509594131" class="cta-phone">509 594 131</a>
+</section>
+
 <!-- ========== Kontakt ========== -->
 <section id="kontakt" class="section">
   <div class="container">
@@ -594,7 +609,7 @@
   function onScroll() {
     const scrollTop = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    if (docHeight > 0) progressBar.style.width = (scrollTop / docHeight) * 100 + '%';
+    if (docHeight > 0) progressBar.style.transform = 'scaleX(' + (scrollTop / docHeight) + ')';
     nav.classList.toggle('scrolled', scrollTop > 60);
     backToTop.classList.toggle('visible', scrollTop > 500);
   }
