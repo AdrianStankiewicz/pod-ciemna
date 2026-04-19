@@ -16,11 +16,24 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Kwatery Pod Ciemną – Noclegi w Dolinie Będkowskiej" />
 <meta property="og:description" content="Ciche noclegi, pokoje i domek w środku lasu, tuż obok jurajskich skał. Łazy 133, Dolina Będkowska." />
-<meta property="og:image" content="images/dom-glowne.jpg" />
+<meta property="og:image" content="images/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:locale" content="pl_PL" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kwatery Pod Ciemną – Noclegi w Dolinie Będkowskiej" />
+<meta name="twitter:description" content="Ciche noclegi, pokoje i domek w środku lasu, tuż obok jurajskich skał. Łazy 133, Dolina Będkowska." />
+<meta name="twitter:image" content="images/og-image.jpg" />
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="images/logo.png" />
+
+<!-- Preload critical assets -->
+<link rel="preload" as="image" href="images/dom-glowne.webp" type="image/webp" />
+<link rel="dns-prefetch" href="https://www.google.com" />
+<link rel="dns-prefetch" href="https://maps.google.com" />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,8 +46,13 @@
   "@context": "https://schema.org",
   "@type": "LodgingBusiness",
   "name": "Kwatery Pod Ciemną",
-  "description": "Noclegi, pokoje i domek na wynajem w Dolinie Będkowskiej, w otoczeniu lasu i jurajskich skał.",
-  "image": "images/dom-glowne.jpg",
+  "description": "Noclegi, pokoje i domek na wynajem w Dolinie Będkowskiej, w otoczeniu lasu i jurajskich skał. Blisko Krakowa, w sercu Jury Krakowsko-Częstochowskiej.",
+  "image": [
+    "images/og-image.jpg",
+    "images/dom-glowne.webp",
+    "images/pokoj-1.webp",
+    "images/domek-salon.webp"
+  ],
   "telephone": "+48 509 594 131",
   "email": "kwaterypodciemna@gmail.com",
   "address": {
@@ -50,400 +68,128 @@
     "latitude": 50.1938,
     "longitude": 19.7363
   },
+  "hasMap": "https://maps.app.goo.gl/Wi2SfNXNNqBU4zpj6",
   "url": "https://kwaterypodciemna.pl/",
   "sameAs": [
     "https://www.facebook.com/"
+  ],
+  "checkinTime": "15:00",
+  "checkoutTime": "11:00",
+  "petsAllowed": true,
+  "numberOfRooms": 3,
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Bezpłatny parking", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Ogrzewanie", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Pościel i ręczniki", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Kuchnia dla gości", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Taras", "value": true }
+  ],
+  "availableLanguage": ["pl"],
+  "paymentAccepted": "Gotówka, Przelew",
+  "currenciesAccepted": "PLN",
+  "priceRange": "$$"
+}
+</script>
+
+<!-- Structured data – FAQ (Google rich results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak zarezerwować pobyt w Kwaterach Pod Ciemną?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rezerwujemy wyłącznie telefonicznie pod numerem 509 594 131 lub mailowo na kwaterypodciemna@gmail.com. Nie korzystamy z Booking.com ani innych portali."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy pobieracie zaliczkę?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Przy dłuższych pobytach i rezerwacjach w sezonie prosimy o symboliczną zaliczkę — szczegóły ustalamy indywidualnie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jakie są godziny przyjazdu i wyjazdu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doba pobytowa zaczyna się od 15:00 i kończy o 11:00. Godziny są elastyczne — daj nam znać, jeśli potrzebujesz innej pory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy można przyjechać ze zwierzętami?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak, kochamy zwierzęta. Prosimy tylko o wcześniejszą informację podczas rezerwacji."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy jest parking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak, na terenie posesji przygotowaliśmy miejsca parkingowe dla Gości — za darmo i bezpiecznie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy jest WiFi i zasięg komórkowy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WiFi jest dostępne w głównym domu. Zasięg GSM bywa słaby — to część uroku tego miejsca."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Co jest w cenie pobytu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Świeża pościel, ręczniki, parking, ogrzewanie, media i dostęp do wspólnej kuchni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy można palić?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "W domu i domku obowiązuje zakaz palenia. Na tarasie i w ogrodzie — oczywiście można."
+      }
+    }
   ]
 }
 </script>
 
-<style>
-  /* ========== Reset & podstawy ========== */
-  *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    font-weight: 300;
-    line-height: 1.7;
-    color: #2d2416;
-    background: #faf7f0;
-    -webkit-font-smoothing: antialiased;
-  }
-  img { max-width: 100%; display: block; }
-  a { color: #5a4a2a; text-decoration: none; transition: color .2s; }
-  a:hover { color: #3d5a3d; }
+<!-- TODO: Cloudflare Web Analytics — po podpięciu domeny wstawić token:
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "TWOJ_TOKEN"}'></script>
+-->
 
-  h1, h2, h3 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 600;
-    letter-spacing: .02em;
-    color: #2d2416;
-    margin: 0 0 .6em;
-    line-height: 1.2;
-  }
-  h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
-  h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); text-align: center; margin-bottom: 1em; }
-  h3 { font-size: 1.4rem; }
-  p  { margin: 0 0 1em; }
-
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-  .section { padding: 80px 0; }
-  .section-alt { background: #f0e9d8; }
-
-  /* ========== Nawigacja ========== */
-  .nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: rgba(250, 247, 240, .95);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(45, 36, 22, .08);
-    z-index: 100;
-    padding: 14px 0;
-  }
-  .nav-inner { display: flex; align-items: center; justify-content: space-between; }
-  .nav-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    letter-spacing: .05em;
-    color: #2d2416;
-    text-transform: uppercase;
-  }
-  .nav-links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
-  .nav-links a {
-    color: #2d2416;
-    font-size: .9rem;
-    font-weight: 400;
-    letter-spacing: .04em;
-  }
-  .nav-toggle { display: none; background: none; border: 0; font-size: 1.5rem; cursor: pointer; color: #2d2416; }
-
-  @media (max-width: 820px) {
-    .nav-links {
-      position: absolute; top: 100%; left: 0; right: 0;
-      background: #faf7f0;
-      flex-direction: column;
-      padding: 20px 24px;
-      gap: 16px;
-      border-bottom: 1px solid rgba(0,0,0,.08);
-      transform: translateY(-110%);
-      transition: transform .3s ease;
-    }
-    .nav-links.open { transform: translateY(0); }
-    .nav-toggle { display: block; }
-  }
-
-  /* ========== Hero ========== */
-  .hero {
-    position: relative;
-    min-height: 100vh;
-    background: linear-gradient(rgba(20,20,15,.35), rgba(20,20,15,.55)),
-                url('images/dom-glowne.jpg') center/cover no-repeat;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 80px 24px 40px;
-  }
-  .hero-content { max-width: 820px; }
-  .hero-eyebrow {
-    font-size: .85rem;
-    letter-spacing: .35em;
-    text-transform: uppercase;
-    opacity: .9;
-    margin-bottom: 18px;
-  }
-  .hero h1 { color: #fff; margin-bottom: .4em; }
-  .hero-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    color: #fff;
-    opacity: .95;
-    margin-bottom: 2em;
-  }
-  .btn {
-    display: inline-block;
-    padding: 14px 32px;
-    border: 1.5px solid #fff;
-    color: #fff;
-    font-size: .85rem;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: all .25s;
-    cursor: pointer;
-    background: transparent;
-  }
-  .btn:hover { background: #fff; color: #2d2416; }
-  .btn-dark {
-    border-color: #3d5a3d; color: #3d5a3d; background: transparent;
-  }
-  .btn-dark:hover { background: #3d5a3d; color: #fff; }
-  .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-
-  /* ========== Sekcja „O miejscu” ========== */
-  .intro {
-    text-align: center;
-    max-width: 780px;
-    margin: 0 auto;
-  }
-  .intro .lead {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    font-style: italic;
-    color: #4a5d3a;
-    margin-bottom: 1.2em;
-  }
-  .intro p { color: #4d4435; }
-
-  .divider {
-    width: 60px; height: 2px;
-    background: #8b7355;
-    margin: 0 auto 30px;
-  }
-
-  /* ========== Pokoje ========== */
-  .rooms {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
-    margin-top: 40px;
-  }
-  .room-card {
-    background: #faf7f0;
-    border: 1px solid rgba(45, 36, 22, .1);
-    overflow: hidden;
-    transition: transform .3s, box-shadow .3s;
-  }
-  .room-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(45, 36, 22, .12);
-  }
-  .room-img {
-    height: 240px;
-    background-size: cover;
-    background-position: center;
-  }
-  .room-body { padding: 28px 26px; }
-  .room-body h3 { margin-bottom: .4em; }
-  .room-body ul {
-    list-style: none;
-    padding: 0;
-    margin: 14px 0 0;
-    font-size: .92rem;
-    color: #5d5540;
-  }
-  .room-body li { padding: 4px 0; padding-left: 22px; position: relative; }
-  .room-body li::before {
-    content: "✓";
-    position: absolute; left: 0; top: 4px;
-    color: #4a5d3a;
-    font-weight: 600;
-  }
-
-  /* ========== Galeria ========== */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 10px;
-    margin-top: 40px;
-  }
-  .gallery-item {
-    aspect-ratio: 4/3;
-    overflow: hidden;
-    cursor: pointer;
-    background: #e5dfc8;
-  }
-  .gallery-item img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    transition: transform .6s ease;
-  }
-  .gallery-item:hover img { transform: scale(1.08); }
-  .gallery-item.tall { grid-row: span 2; aspect-ratio: 3/5; }
-
-  /* Lightbox */
-  .lightbox {
-    position: fixed; inset: 0;
-    background: rgba(15, 12, 8, .95);
-    display: none;
-    align-items: center; justify-content: center;
-    z-index: 200;
-    padding: 40px;
-  }
-  .lightbox.active { display: flex; }
-  .lightbox img {
-    max-width: 90vw;
-    max-height: 85vh;
-    object-fit: contain;
-  }
-  .lightbox-close {
-    position: absolute; top: 20px; right: 30px;
-    font-size: 2.2rem;
-    color: #fff;
-    background: none; border: 0;
-    cursor: pointer;
-    line-height: 1;
-  }
-  .lightbox-nav {
-    position: absolute; top: 50%; transform: translateY(-50%);
-    background: rgba(255,255,255,.1);
-    border: 0; color: #fff;
-    font-size: 1.8rem;
-    width: 50px; height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background .2s;
-  }
-  .lightbox-nav:hover { background: rgba(255,255,255,.25); }
-  .lightbox-prev { left: 30px; }
-  .lightbox-next { right: 30px; }
-
-  /* ========== Atrakcje ========== */
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-    text-align: center;
-  }
-  .feature-icon {
-    font-size: 2.4rem;
-    margin-bottom: 14px;
-  }
-  .feature h3 { font-size: 1.2rem; margin-bottom: .5em; }
-  .feature p { color: #5d5540; font-size: .95rem; }
-
-  /* ========== FAQ ========== */
-  .faq {
-    max-width: 820px;
-    margin: 40px auto 0;
-  }
-  details {
-    border-bottom: 1px solid rgba(45, 36, 22, .15);
-    padding: 20px 0;
-  }
-  summary {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #2d2416;
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  summary::-webkit-details-marker { display: none; }
-  summary::after {
-    content: "+";
-    font-size: 1.6rem;
-    color: #8b7355;
-    transition: transform .3s;
-    margin-left: 20px;
-  }
-  details[open] summary::after { transform: rotate(45deg); }
-  details p { margin: 14px 0 0; color: #5d5540; }
-
-  /* ========== Kontakt ========== */
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin-top: 40px;
-    align-items: stretch;
-  }
-  @media (max-width: 820px) {
-    .contact-grid { grid-template-columns: 1fr; }
-  }
-  .contact-info {
-    background: #faf7f0;
-    padding: 40px;
-    border: 1px solid rgba(45, 36, 22, .1);
-  }
-  .contact-item {
-    padding: 16px 0;
-    border-bottom: 1px solid rgba(45, 36, 22, .08);
-  }
-  .contact-item:last-child { border-bottom: 0; }
-  .contact-label {
-    font-size: .75rem;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    color: #8b7355;
-    margin-bottom: 4px;
-  }
-  .contact-value {
-    font-size: 1.15rem;
-    color: #2d2416;
-    font-weight: 400;
-  }
-  .contact-value a { color: #2d2416; }
-  .contact-value a:hover { color: #4a5d3a; }
-
-  .map-embed {
-    width: 100%;
-    min-height: 380px;
-    border: 0;
-  }
-
-  /* ========== Footer ========== */
-  footer {
-    background: #2d2416;
-    color: #d4c9b0;
-    padding: 50px 0 24px;
-    text-align: center;
-  }
-  footer p { margin: 6px 0; font-size: .9rem; }
-  footer a { color: #d4c9b0; }
-  footer a:hover { color: #fff; }
-  .footer-social { display: flex; justify-content: center; gap: 18px; margin: 20px 0; }
-  .footer-social a {
-    width: 40px; height: 40px;
-    border: 1px solid #6d6248;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    transition: all .25s;
-  }
-  .footer-social a:hover {
-    background: #d4c9b0;
-    color: #2d2416;
-  }
-  .footer-bottom {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #3d3424;
-    font-size: .8rem;
-    opacity: .7;
-  }
-
-  /* ========== Animacje scrollowe ========== */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity .8s ease, transform .8s ease;
-  }
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+<a href="#o-nas" class="skip-link">Przejdź do treści</a>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <!-- ========== Nawigacja ========== -->
-<nav class="nav">
+<nav class="nav" id="mainNav">
   <div class="container nav-inner">
     <a href="#" class="nav-brand">Pod Ciemną</a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
     <ul class="nav-links">
       <li><a href="#o-nas">O miejscu</a></li>
       <li><a href="#pokoje">Pokoje</a></li>
       <li><a href="#galeria">Galeria</a></li>
       <li><a href="#okolica">Okolica</a></li>
+      <li><a href="#dojazd">Dojazd</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
@@ -472,21 +218,47 @@
       <p class="lead">Niewielki, zadbany dom u stóp Skały Ciemnej — w samym sercu Doliny Będkowskiej.</p>
       <p>
         Oferujemy komfortowe pokoje i cały domek na wynajem dla osób, które chcą odpocząć z dala od miejskiego zgiełku.
-        Z okien naszych pokoi widać jurajskie wapienne skały i otaczający je bukowy las. Do Krakowa jest stąd około
-        pół godziny autem, ale tutaj czas płynie zupełnie inaczej — bez tłumów, bez hałasu, czasem nawet bez zasięgu.
+        Z okien naszych pokoi widać jurajskie wapienne skały i otaczający je bukowy las. To noclegi blisko Krakowa
+        (ok. 30 minut autem), ale tutaj czas płynie zupełnie inaczej — bez tłumów, bez hałasu, czasem nawet bez zasięgu.
       </p>
       <p>
-        To idealne miejsce dla rodzin, par, wspinaczy, miłośników pieszych wędrówek i każdego,
-        kto szuka prawdziwej ciszy przy odrobinie komfortu.
+        Szukasz domku w lesie na weekend, spokojnego wypoczynku na Jurze Krakowsko&#8209;Częstochowskiej
+        lub bazy wypadowej do Ojcowa i Doliny Będkowskiej? To idealne miejsce dla rodzin, par, wspinaczy
+        i każdego, kto szuka prawdziwej ciszy przy odrobinie komfortu.
       </p>
     </div>
   </div>
 </section>
 
+<!-- ========== Stats strip ========== -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number">25 km</span>
+        <span class="stat-label">od Krakowa</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">2 min</span>
+        <span class="stat-label">do szlaku pieszego</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">0</span>
+        <span class="stat-label">zasięgu — i o to chodzi</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">360°</span>
+        <span class="stat-label">natury dookoła</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ========== Pokoje ========== -->
+<!-- TODO: Dodać orientacyjny cennik, np. "od X zł/noc" przy każdym pokoju — pomaga w SEO i decyzji gościa -->
 <section id="pokoje" class="section section-alt">
   <div class="container">
-    <h2>Pokoje i domek</h2>
+    <h2>Noclegi — pokoje i domek na wynajem</h2>
     <div class="divider"></div>
     <p style="text-align:center; max-width:640px; margin: 0 auto; color:#5d5540;">
       Do dyspozycji Gości przygotowaliśmy jasne, spokojne pokoje oraz cały domek z osobnym wejściem.
@@ -495,7 +267,9 @@
 
     <div class="rooms">
       <article class="room-card fade-in">
-        <div class="room-img" style="background-image:url('images/pokoj-1.jpg');"></div>
+        <div class="room-img-wrap">
+          <div class="room-img" style="background-image:url('images/pokoj-1.webp');"></div>
+        </div>
         <div class="room-body">
           <h3>Pokój dwuosobowy z widokiem</h3>
           <p style="color:#5d5540; font-size:.95rem;">
@@ -512,7 +286,9 @@
       </article>
 
       <article class="room-card fade-in">
-        <div class="room-img" style="background-image:url('images/pokoj-2.jpg');"></div>
+        <div class="room-img-wrap">
+          <div class="room-img" style="background-image:url('images/pokoj-2.webp');"></div>
+        </div>
         <div class="room-body">
           <h3>Pokój rodzinny</h3>
           <p style="color:#5d5540; font-size:.95rem;">
@@ -529,7 +305,9 @@
       </article>
 
       <article class="room-card fade-in">
-        <div class="room-img" style="background-image:url('images/domek-salon.jpg');"></div>
+        <div class="room-img-wrap">
+          <div class="room-img" style="background-image:url('images/domek-salon.webp');"></div>
+        </div>
         <div class="room-body">
           <h3>Cały domek na wyłączność</h3>
           <p style="color:#5d5540; font-size:.95rem;">
@@ -561,18 +339,18 @@
     <p style="text-align:center; color:#5d5540;">Zobacz, jak wygląda u nas na miejscu.</p>
 
     <div class="gallery">
-      <div class="gallery-item"><img src="images/dom-glowne.jpg" alt="Dom wśród lasu Pod Ciemną" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/dom-bok.jpg" alt="Widok z boku na domek" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/skala-ciemna.jpg" alt="Skała Ciemna w Dolinie Będkowskiej" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/pokoj-1.jpg" alt="Pokój z łóżkiem małżeńskim" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/pokoj-2.jpg" alt="Pokój rodzinny" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/domek-salon.jpg" alt="Salon w domku" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/sypialnia-poddasze.jpg" alt="Sypialnia na poddaszu" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/lazienka.jpg" alt="Łazienka z prysznicem" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/pokoj-mniejszy.jpg" alt="Przytulny pokój" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/widok-z-okna.jpg" alt="Widok z okna na skały" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/podjazd.jpg" alt="Podjazd i parking" loading="lazy"></div>
-      <div class="gallery-item"><img src="images/las.jpg" alt="Las wokół domu" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/dom-glowne.webp" alt="Kwatery Pod Ciemną – domek noclegowy w Dolinie Będkowskiej wśród lasu" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/dom-bok.webp" alt="Domek na wynajem Pod Ciemną – widok z boku na posesję" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/skala-ciemna.webp" alt="Skała Ciemna – jurajska atrakcja obok kwater w Dolinie Będkowskiej" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/pokoj-1.webp" alt="Pokój dwuosobowy z łóżkiem małżeńskim – noclegi Dolina Będkowska" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/pokoj-2.webp" alt="Pokój rodzinny na wynajem – Kwatery Pod Ciemną, Łazy" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/domek-salon.webp" alt="Salon z jadalnią w domku na wyłączność – wypoczynek blisko Krakowa" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/sypialnia-poddasze.webp" alt="Sypialnia na poddaszu z widokiem – pokoje Kwatery Pod Ciemną" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/lazienka.webp" alt="Nowoczesna łazienka z prysznicem w kwaterach Pod Ciemną" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/pokoj-mniejszy.webp" alt="Przytulny pokój jednoosobowy z widokiem na ogród" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/widok-z-okna.webp" alt="Widok z okna na jurajskie skały – Dolina Będkowska" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/podjazd.webp" alt="Bezpłatny parking na posesji – Kwatery Pod Ciemną" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/las.webp" alt="Las bukowy otaczający kwatery w Dolinie Będkowskiej" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -580,9 +358,10 @@
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lightbox-close" aria-label="Zamknij">&times;</button>
-  <button class="lightbox-nav lightbox-prev" aria-label="Poprzednie">‹</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Poprzednie">&#8249;</button>
   <img id="lightbox-img" src="" alt="" />
-  <button class="lightbox-nav lightbox-next" aria-label="Następne">›</button>
+  <button class="lightbox-nav lightbox-next" aria-label="Następne">&#8250;</button>
+  <div class="lightbox-counter" id="lightbox-counter"></div>
 </div>
 
 <!-- ========== Okolica ========== -->
@@ -591,28 +370,28 @@
     <h2>Okolica</h2>
     <div class="divider"></div>
     <p style="text-align:center; max-width:720px; margin:0 auto; color:#5d5540;">
-      Dolina Będkowska to jedna z najpiękniejszych dolin Jury Krakowsko‑Częstochowskiej.
+      Dolina Będkowska to jedna z najpiękniejszych dolin Jury Krakowsko&#8209;Częstochowskiej.
       Masz u nas wszystko pod ręką:
     </p>
 
     <div class="features">
       <div class="feature fade-in">
-        <div class="feature-icon">⛰️</div>
+        <div class="feature-icon">&#9968;&#65039;</div>
         <h3>Skały i wspinaczka</h3>
         <p>Sokole Skały, Brandysowa, Sokolica — raj dla wspinaczy i spacerowiczów z aparatem.</p>
       </div>
       <div class="feature fade-in">
-        <div class="feature-icon">🚶</div>
+        <div class="feature-icon">&#128694;</div>
         <h3>Szlaki piesze</h3>
         <p>Kilkanaście kilometrów oznakowanych szlaków startujących dosłownie od naszej furtki.</p>
       </div>
       <div class="feature fade-in">
-        <div class="feature-icon">💧</div>
+        <div class="feature-icon">&#128167;</div>
         <h3>Wodospad Szum</h3>
-        <p>Najwyższy naturalny wodospad Wyżyny Krakowsko‑Częstochowskiej — około 30 minut spacerem.</p>
+        <p>Najwyższy naturalny wodospad Wyżyny Krakowsko&#8209;Częstochowskiej — około 30 minut spacerem.</p>
       </div>
       <div class="feature fade-in">
-        <div class="feature-icon">🏰</div>
+        <div class="feature-icon">&#127984;</div>
         <h3>Kraków i zamki Jury</h3>
         <p>Kraków ok. 25 km, Ojców i zamek w Pieskowej Skale w zasięgu krótkiej wycieczki autem.</p>
       </div>
@@ -620,8 +399,49 @@
   </div>
 </section>
 
+<!-- ========== Jak dojechać ========== -->
+<section id="dojazd" class="section">
+  <div class="container">
+    <h2>Jak do nas trafić</h2>
+    <div class="divider"></div>
+    <p style="text-align:center; max-width:660px; margin:0 auto; color:#5d5540;">
+      Nasze kwatery leżą w samym sercu Doliny Będkowskiej, w otoczeniu Jury Krakowsko&#8209;Częstochowskiej.
+      Droga jest prosta — a ostatni odcinek przez las to już początek wypoczynku.
+    </p>
+
+    <div class="directions">
+      <div class="direction-step fade-in">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Z Krakowa — kierunek Olkusz</h3>
+          <p>Jedź drogą krajową DK94 na północny zachód. Za Zabierzowem skręć w kierunku Jerzmanowic (droga 773).</p>
+        </div>
+      </div>
+      <div class="direction-step fade-in">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Jerzmanowice → Łazy</h3>
+          <p>Z Jerzmanowic kieruj się na wschód do miejscowości Łazy, w stronę Doliny Będkowskiej. Szukaj numeru 133.</p>
+        </div>
+      </div>
+      <div class="direction-step fade-in">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Na miejscu</h3>
+          <p>Dom stoi u podnóża Skały Ciemnej. Parking na posesji. W razie problemów — zadzwoń, naprowadzmy!</p>
+        </div>
+      </div>
+    </div>
+    <div class="directions-cta fade-in">
+      <a class="btn btn-dark" href="https://maps.app.goo.gl/Wi2SfNXNNqBU4zpj6" target="_blank" rel="noopener">
+        Otwórz w Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ========== FAQ ========== -->
-<section id="faq" class="section">
+<section id="faq" class="section section-alt">
   <div class="container">
     <h2>Najczęściej zadawane pytania</h2>
     <div class="divider"></div>
@@ -663,7 +483,7 @@
 </section>
 
 <!-- ========== Kontakt ========== -->
-<section id="kontakt" class="section section-alt">
+<section id="kontakt" class="section">
   <div class="container">
     <h2>Kontakt i rezerwacje</h2>
     <div class="divider"></div>
@@ -678,14 +498,14 @@
           <div class="contact-value"><a href="tel:+48509594131">509 594 131</a></div>
         </div>
         <div class="contact-item">
-          <div class="contact-label">E‑mail</div>
+          <div class="contact-label">E&#8209;mail</div>
           <div class="contact-value"><a href="mailto:kwaterypodciemna@gmail.com">kwaterypodciemna@gmail.com</a></div>
         </div>
         <div class="contact-item">
           <div class="contact-label">Adres</div>
           <div class="contact-value">
             Łazy 133<br>
-            32‑048 Łazy<br>
+            32&#8209;048 Łazy<br>
             Dolina Będkowska
           </div>
         </div>
@@ -710,33 +530,55 @@
 </section>
 
 <!-- ========== Footer ========== -->
-<!-- TODO: Hosting — wrzucić stronę np. na Netlify (darmowy, drag & drop folderu pod-ciemna) lub GitHub Pages. Kupić domenę kwaterypodciemna.pl i podpiąć. -->
+<!-- TODO: Hosting — wrzucić stronę na Cloudflare Pages (source code na GitHub). Kupić domenę kwaterypodciemna.pl i podpiąć. -->
 <footer>
   <div class="container">
     <h3 style="color:#faf7f0; margin-bottom:8px;">Kwatery Pod Ciemną</h3>
     <p style="font-style:italic; color:#a8a080;">Las, cisza, skały. Tyle wystarczy.</p>
 
     <div class="footer-social">
-      <a href="tel:+48509594131" aria-label="Telefon" title="Telefon">☎</a>
-      <a href="mailto:kwaterypodciemna@gmail.com" aria-label="E‑mail" title="E-mail">✉</a>
-      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">f</a>
-      <a href="https://maps.app.goo.gl/Wi2SfNXNNqBU4zpj6" target="_blank" rel="noopener" aria-label="Google Maps" title="Mapa">📍</a>
+      <a href="tel:+48509594131" aria-label="Telefon" title="Telefon">&#9742;</a>
+      <a href="mailto:kwaterypodciemna@gmail.com" aria-label="E-mail" title="E-mail">&#9993;</a>
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">f</a><!-- TODO: Uzupełnić prawdziwy link do profilu na Facebooku -->
+      <a href="https://maps.app.goo.gl/Wi2SfNXNNqBU4zpj6" target="_blank" rel="noopener" aria-label="Google Maps" title="Mapa">&#128205;</a>
     </div>
 
-    <p>Łazy 133, 32‑048 Łazy · Dolina Będkowska</p>
+    <p>Łazy 133, 32&#8209;048 Łazy · Dolina Będkowska</p>
     <p><a href="tel:+48509594131">509 594 131</a> · <a href="mailto:kwaterypodciemna@gmail.com">kwaterypodciemna@gmail.com</a></p>
 
     <div class="footer-bottom">
-      © <span id="year"></span> Kwatery Pod Ciemną. Wszystkie prawa zastrzeżone.
+      &copy; <span id="year"></span> Kwatery Pod Ciemną. Wszystkie prawa zastrzeżone.
     </div>
   </div>
 </footer>
 
+<!-- ========== Floating contact button ========== -->
+<div class="fab" id="fab">
+  <div class="fab-options">
+    <a href="tel:+48509594131" class="fab-option">
+      <span class="fab-option-label">Zadzwoń</span>
+      <span class="fab-option-icon">&#128222;</span>
+    </a>
+    <a href="https://wa.me/48509594131" class="fab-option" target="_blank" rel="noopener">
+      <span class="fab-option-label">WhatsApp</span>
+      <span class="fab-option-icon">&#128172;</span>
+    </a>
+    <a href="mailto:kwaterypodciemna@gmail.com" class="fab-option">
+      <span class="fab-option-label">Napisz e-mail</span>
+      <span class="fab-option-icon">&#9993;&#65039;</span>
+    </a>
+  </div>
+  <button class="fab-main" aria-label="Kontakt">&#10010;</button>
+</div>
+
+<!-- ========== Back to top ========== -->
+<button class="back-to-top" id="backToTop" aria-label="Powrót na górę">&#8593;</button>
+
 <script>
-  // Rok w stopce
+  // === Year ===
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Mobile menu
+  // === Mobile menu ===
   const toggle = document.querySelector('.nav-toggle');
   const links  = document.querySelector('.nav-links');
   toggle.addEventListener('click', () => links.classList.toggle('open'));
@@ -744,15 +586,68 @@
     a.addEventListener('click', () => links.classList.remove('open'));
   });
 
-  // Fade-in przy scrollu
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: .15 });
-  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  // === Scroll: progress bar, nav state, back-to-top ===
+  const progressBar = document.getElementById('scrollProgress');
+  const nav = document.getElementById('mainNav');
+  const backToTop = document.getElementById('backToTop');
 
-  // Lightbox
+  function onScroll() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) progressBar.style.width = (scrollTop / docHeight) * 100 + '%';
+    nav.classList.toggle('scrolled', scrollTop > 60);
+    backToTop.classList.toggle('visible', scrollTop > 500);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // === Scroll reveal: fade-in & dividers ===
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: .15 });
+  document.querySelectorAll('.fade-in, .divider').forEach(el => revealObserver.observe(el));
+
+  // === Stats stagger ===
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.stat').forEach((s, i) => {
+          setTimeout(() => s.classList.add('visible'), i * 120);
+        });
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: .3 });
+  const statsEl = document.querySelector('.stats');
+  if (statsEl) statsObserver.observe(statsEl);
+
+  // === Gallery stagger ===
+  const galleryObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.gallery-item').forEach((item, i) => {
+          setTimeout(() => item.classList.add('visible'), i * 60);
+        });
+        galleryObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: .1 });
+  const galleryEl = document.querySelector('.gallery');
+  if (galleryEl) galleryObserver.observe(galleryEl);
+
+  // === Lightbox ===
   const lightbox    = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCounter = document.getElementById('lightbox-counter');
   const items       = Array.from(document.querySelectorAll('.gallery-item img'));
   let currentIdx    = 0;
 
@@ -760,6 +655,7 @@
     currentIdx = idx;
     lightboxImg.src = items[idx].src;
     lightboxImg.alt = items[idx].alt;
+    lightboxCounter.textContent = (idx + 1) + ' / ' + items.length;
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
@@ -771,6 +667,7 @@
     currentIdx = (currentIdx + dir + items.length) % items.length;
     lightboxImg.src = items[currentIdx].src;
     lightboxImg.alt = items[currentIdx].alt;
+    lightboxCounter.textContent = (currentIdx + 1) + ' / ' + items.length;
   }
 
   items.forEach((img, i) => img.parentElement.addEventListener('click', () => openLightbox(i)));
@@ -783,6 +680,13 @@
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowLeft')  navLightbox(-1);
     if (e.key === 'ArrowRight') navLightbox(1);
+  });
+
+  // === Floating action button ===
+  const fab = document.getElementById('fab');
+  fab.querySelector('.fab-main').addEventListener('click', () => fab.classList.toggle('open'));
+  document.addEventListener('click', (e) => {
+    if (!fab.contains(e.target)) fab.classList.remove('open');
   });
 </script>
 
